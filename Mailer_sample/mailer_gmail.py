@@ -8,7 +8,7 @@ def send_gmail(send_adress, password, mail_components):
   smtpobj.login(send_adress, password)
 
   msg = MIMEText(mail_components["body"])
-  msg["Sbuject"] = mail_components["subject"]
+  msg["Subject"] = mail_components["subject"]
   msg["From"] = mail_components["from"]
   msg["To"] = mail_components["to"]
   msg["Date"] = formatdate()
